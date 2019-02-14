@@ -18,8 +18,7 @@ var databaseUrl = 'mongodb://best-for-you-db-52854:yq0xDrb6k0u863kcrjBINMrgIt8cT
 var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
 mongoose.connect(databaseUrl, { useMongoClient: true, promiseLibrary: require('bluebird') })
-  .then(() => console.log('connection succesful')
-  )
+  .then(() => console.log('connection succesful'))
   .catch((err) => console.error(err));
 var db = mongoose.connection;
 
